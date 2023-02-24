@@ -1,8 +1,8 @@
 {
-  "crons": [
-    {
-      "path": "/api/cron",
-      "schedule": "0 8 * * *"
-    }
+  "routes": [
+    { "src": "/", "dest": "iranbourseai_py.ipynb" }
+  ],
+  "builds": [
+    { "src": "app.py", "use": "@now/python" }
   ]
 }
