@@ -5,4 +5,11 @@
   "builds": [
     { "src": "app.py", "use": "@now/python" }
   ]
+  {
+  "crons": [{
+    "path": "/api/cron",
+    "schedule": "0 10 * * *"
+  }]
+}
+
 }
