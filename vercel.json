@@ -1,13 +1,10 @@
 {
-  "builds": [
-    { "src": "cron.py", "use": "@now/python" }
-  ],
-  "env": {
-    "MY_VARIABLE": "IRANBOURSE.NET ALGO"
-  },
   "functions": {
     "cron": {
-      "schedule": "0 */24 * * *"
+      "memory": 128,
+      "maxDuration": 60,
+      "runtime": "vercel-cron",
+      "schedule": "0 8 * * *"
     }
   }
 }
