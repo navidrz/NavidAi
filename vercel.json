@@ -1,0 +1,13 @@
+{
+  "builds": [
+    { "src": "cron.py", "use": "@now/python" }
+  ],
+  "env": {
+    "MY_VARIABLE": "IRANBOURSE.NET ALGO"
+  },
+  "functions": {
+    "cron": {
+      "schedule": "0 */24 * * *"
+    }
+  }
+}
