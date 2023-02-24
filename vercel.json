@@ -1,6 +1,6 @@
 {
   "routes": [
-    { "src": "/", "dest": "iranbourseai_py.ipynb" }
+    { "src": "/", "dest": "iranbourseai.py" }
   ],
   "builds": [
     { "src": "app.py", "use": "@now/python" }
